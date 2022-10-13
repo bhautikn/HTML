@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Student Registration
+	</title>
+	<style>
+		body{
+			background-color: #222;
+		}
+		h1{
+			color: gray;
+			background-color: #444;
+			box-shadow: 2px 2px 4px black;
+		}
+		td{
+			font-size: 19px;
+			color: gray;
+		}
+		table{
+			background-color: #333;
+			box-shadow: 1px 1px 5px 3px black;
+			border-radius: 5px;
+		}
+
+		#cmdsubmit{
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			display: inline-block;
+			font-size: 20px;
+			border-radius: 5px;
+			transition: 0.5s;
+			text-align: center;
+		}
+		#cmdsubmit:hover{
+			background-color: white;
+			color: #4CAF50;
+		}
+		.allinput{
+			border-radius: 4px;
+			
+		}
+
+	
+	</style>
+</head>
+<body>
+	<h1 align="center">Student Registration</h1>
+	<form method="post">
+	<table align="center" cellpadding="6">
+		<tr>
+			<td>Fullname :</td>
+			<td ><input type="text" name="" class="allinput" required></td>
+		</tr>
+		<tr>
+			<td>Email :</td>
+			<td class=""><input type="email" class="allinput" name="" required></td>
+		</tr>
+		<tr>
+			<td>Mobile No :</td>
+			<td class=""><input type="number" class="allinput" max="10" name="" required></td>
+		</tr>
+		<tr>
+			<td>Address :</td>
+			<td class=""><textarea cols="50 " class="allinput" rows="5" required></textarea></td>
+		</tr> 
+		<tr>
+			<td>Nationality :</td>
+			<td class=""><input type="text" class="allinput" name="" required></td>
+		</tr>
+		<tr>
+			<td>Date Of Birth :</td>
+			<td class=""><input type="Date" class="allinput" name="" required></td>
+		</tr>
+		<tr>
+			<td>Gender :</td>
+			<td class=""><input type="radio" class="allinput" name="Gender" value="Male" checked> Male<br>
+				<input  class="allinput" type="radio" name="Gender" value="Female"> Female
+			</td>
+		</tr>
+		<tr>
+			<td>Highest Degree :</td>
+			<td><select name="Degree">
+				<option>10th</option>
+				<option>12th</option>
+				<option>BE</option>
+				<option>ME</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>CPI/Pertiontag :</td>
+			<td class=""><input type="number" name="" class="allinput" required></td>
+		</tr>
+		<tr>
+			<td>University :</td>
+			<td class=""><input type="text" name="" class="allinput" required></td>
+		</tr>
+		<tr>
+			<td>Passing Year :</td>
+			<td><select name="year" class="allinput" id="cars">
+				  <option value="2020">2020</option>
+				  <option value="2022">2021</option>
+				  <option value="2022">2022</option>
+				  <option value="2023">2023</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" name="" id="cmdsubmit">
+			</td>
+		</tr>
+
+
+	</table>
+</form>
+</body>
+</html>
