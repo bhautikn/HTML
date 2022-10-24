@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout 13</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			font-family: cursive;
+		}
+		div{
+			padding: 15px;
+		}
+		h2{
+			margin: 0px;
+			color: white;
+		}
+		body{
+			margin: 1% 15% 1% 15%;
+			border: 4px solid gray;
+		}
+		.header{
+			background-color: dodgerblue;
+			height: 13vh;
+		}
+		.body{
+			height: 70vh;
+			margin-left: 17%;
+			margin-right: 17%;
+			padding-top: 1%;
+			padding-bottom: 1.5%;
+			text-align: center;
+		}
+		.body div{
+			padding: 10%;
+		}
+		.footer{
+			background-color: slateblue;
+			height: 13vh;
+		}
+		.maincontant{
+			background-color: mediumseagreen;
+			height: 60%;
+			width: 59%;
+			float: left;
+		}
+		.sidebar{
+			margin-left: 1%;
+			background-color: purple;
+			height: 60%;
+			width: 40%;
+			float: right;
+		}
+		.twin{
+			background-color: orange;
+			float: left;
+			width: 49.5%;
+			height: 40%;
+			margin-top: 1%;
+		}
+		.body .twin:last-child{
+			margin-left: 1%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h2>. Header</h2>
+	</div>
+	<div class="body">
+		<div class="maincontant">
+			<h2>. Maincontant</h2>
+		</div>
+		<div class="sidebar">
+			<h2>. Sidebar</h2>
+		</div>
+		<div class="twin">
+			<h2>. twin</h2>
+		</div>
+		<div class="twin">
+			<h2>. twin</h2>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>. Footer</h2>
+	</div>
+
+</body>
+</html>

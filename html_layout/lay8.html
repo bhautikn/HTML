@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout 8</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		body{
+			margin: 0% 20% 20%;
+		}
+		.topnav{
+			text-align: right;
+		}
+		.topnav a{
+			color: red;
+			margin: 2px;
+			font-family: Times;
+		}
+		.nav{
+			background-color: lightgray;
+			height: 7vh;
+			padding: 1%;
+		}
+		.nav a{
+			height: 100%;
+			color: red;
+			margin-right: 5px;
+		}
+		.title{
+			height: 20vh;
+			background-color: lightgray;
+			padding: 20px;
+			margin-top: 1.5px;
+		}
+		.title span{
+			font-family: math;
+			letter-spacing: 1px;
+		}
+		.ccolmn{
+			padding: 10px;
+
+		}
+		.row1 div,.row2 div{
+			background-color: lightgray;
+			float: left;
+			padding: 15px;
+		}
+		.row1{
+			border-top: 1px solid black;
+			padding: 10px;
+			height: 27vh;
+			float: left;
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		.row1 div{
+			height: 25vh;
+			width: 32%;
+			margin: 3px;
+		}
+		.row2{
+			padding-top: 15px;
+			border-top: 1px solid black;
+			height: 23vh;
+			float: left;
+			width: 100%;
+			margin-bottom: 7px;
+
+		}
+		.row2 div{
+			height: 20vh;
+			width: 24%;
+			margin: 3px;
+		}
+		.footer{
+			height: 15vh;
+			width: 100%;
+			text-align: center;
+			padding: 2%;
+		}
+		.footer a{
+			color: red;
+			margin-right: 2px;
+			border-right: 1px solid black;
+			padding-right: 4px;
+		}
+		.row2 a{
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#">Link>></a>
+		<a href="#">Sitemap>></a>
+		<a href="#">Contact>></a>
+	</div>
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Gellary</a>
+		<a href="#">Contact</a>
+
+	</div>
+	<div class="title">
+		<span style="font-size:1.5em;">Site title</span><br>
+		<span>fixed 3-column over 4 colmn layout</span>
+	</div>
+	<div class="ccolmn">
+		<h3 style="margin:0; font-family:math;">centerColmn</h3>
+		sub	heading<br><br>
+		ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint
+	</div>
+	<div class="row1">
+		<div class="cell1">
+			cell_1<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor
+		</div>
+		<div class="cell2">
+			cell_2<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor
+		</div>
+		<div class="cell3">
+			cell_3<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor
+		</div>
+	</div>
+	<div class="row2">
+		<div class="box1">
+			box_1<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor<br><br><a href="#">Link...</a>
+		</div>
+		<div class="box2">
+			box_2<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor<br><br><a href="#">Link...</a>
+		</div>
+		<div class="box3">
+			box_3<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor<br><br><a href="#">Link...</a>
+		</div>
+		<div class="box4">
+			box_4<br><br>aboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor<br><br><a href="#">Link...</a>
+		</div>
+	</div>
+	<div class="footer">
+		Copyright &copy; 2005-2006 <a href="#">Company Name</a> <a style="border: none;" href="#">The CSS Tinderbox</a>
+	</div>
+
+</body>
+</html>

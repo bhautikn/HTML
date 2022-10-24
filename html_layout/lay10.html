@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout 10</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			font-family: sans-serif;
+
+		}
+		.header{
+			background-color: #dddddd;
+			padding: 15px;
+			height: 15vh;
+			width: 100%;
+		}
+		.body{
+			height: 75vh;
+			width: 100%;
+			padding: 15px;
+		}
+		.header span:first-child{
+			font-size: 2em;
+		}
+		.ccolumn{
+			float: left;
+			width: 85%;
+			padding: 16px;
+		}
+		.leftcol{
+			float: left;
+			width: 15%;
+			background-color: #eee;
+			padding: 10px;
+			height: 100%;
+		}
+		.block{
+			background-color: #eeeeee;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 5px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<span>header</span><br>
+		<span>fluid one-column latout (basic)</span>
+	</div>
+	<div class="body">
+		<div class="leftcol">
+			<h3 style="margin:0">left column</h3><br>
+			<span>
+				Home<br><br>
+				About<br><br>
+				Gallery<br><br>
+				Contact<br><br>
+			</span>
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt uti officia deserunt mollit<br><br>
+			<span>
+				XHTML<br><br>
+				CSS<br><br>
+				WCAG<br><br>
+				The CSS Tinderbox
+			</span>
+
+
+
+		</div>
+		<div class="ccolumn">
+			<span style="font-size: 1.5em;">CenterColmn</span>
+			<p style="margin-left: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt uti officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sedia deserunt mollit anim id est laborum.</p>
+			<span style="font-size:1.5em;">Header 2</span><br>
+			Link item
+			<ul>
+				<li>List item</li>
+				<li>List item</li>
+				<li>
+					List item
+					<ul>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+
+				</li>
+			</ul>
+			<div class="block">
+				BlockQout<br>
+				Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+
+			</div>
+		</div>
+		
+		
+	</div>
+
+</body>
+</html>

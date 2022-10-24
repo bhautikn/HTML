@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout 7</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			letter-spacing: 1px;
+			font-family: sans-serif;
+
+		}
+		body{
+			margin-left: 20%;
+			margin-right: 20%;
+			border: 1px solid black;
+			padding: 10px;
+		}
+		.top{
+			border: 1px solid black;
+			height: 20vh;
+			padding: 20px;
+		}
+		.top span:first-child{
+			font-size: 2em;
+		}
+		.body{
+			height: 75vh;
+		}
+		.leftcol{
+			width: 30%;
+			height: 20%;
+			float: left;
+			border: 1px solid black;
+			height: auto;
+			margin-top: 5px;
+			padding: 10px;
+		}
+		.rightcol{
+			margin-top: 5px;
+			width: 70%;
+			float: left;
+			padding: px;
+		}
+		.leftcol a{
+			color: red;
+		}
+		.block{
+			float: left;
+			background-color: lightgray;
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			line-height: 25px;
+		}
+		.footer{
+			border-top: 1px solid black;
+			height: 9vh;
+			text-align: center;
+			padding: 3%;
+		}
+		.footer a{
+			color: red;
+			height: 100%;
+			border-right: 1px solid black;
+			margin-right: 5px;
+			padding-right: 7px;
+		}
+		.footer a:last-child{
+			border: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<span>Site title</span><br>	
+		<span>fixed 1-column #2 layout(basic)</span>
+	</div>
+	<div class="body">
+		<div class="rightcol">
+			<span style="font-size: 1.5em;">CenterColmn</span>
+			<p style="margin-left: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt uti officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<span style="font-size:1.5em;">Header 2</span><br><br>
+			<a href="#" style="color:red; padding-left: 20px;">Link item</a>
+			<ul>
+				<li>List item</li>
+				<li>List item</li>
+				<li>
+					List item
+					<ul>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+
+				</li>
+			</ul>
+		</div>
+		<div class="leftcol">
+			leftColmn<br>
+			<a href="#">Link item</a><br>
+			<a href="#">Link item</a><br>
+			<a href="#">Link item</a><br><br>
+			consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatu	
+
+		</div>
+			<div class="block">
+				BlockQout<br>
+				Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+
+			</div>
+
+		</div>
+		<div class="footer">
+			<a href="#">XHTML</a>
+			<a href="#">CSS</a>
+			<a href="#">WCAG</a>
+			<a href="#">The CSS Tinderbox</a>
+
+		</div>
+
+</body>
+</html>
