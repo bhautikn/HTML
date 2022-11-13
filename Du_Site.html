@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: sans-serif;
+
+		}
+		body{
+			margin: 0px;
+		}
+		.poster{
+			background-image: url(https://darshan.ac.in/U01/Slider/Slide_0.jpg?V=1);
+			margin: 0px;
+			height: 100vh;
+		}
+		.header{
+			height: 66vh;
+		}
+		.logo{
+			height: 10vh;
+			width: 15%;
+			float: left;
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+		.logo img{
+			max-height: 100%;
+		}
+		.sidenav{
+			height: 20vh;
+			width: 70%;
+			float: right;
+			padding-top: 15px;
+
+		}
+		.sidenav a{
+			text-decoration: none;
+			color: black;
+			padding: 6px;
+			transition-duration: 0.5s;
+		}
+		.sidenav a:hover{
+			background-color: red;
+		}
+
+		.firstnav{
+			box-sizing:content-box;
+			height:auto;
+			padding: 7px;
+			float: right;
+			background-color: rgba(5, 5, 5, 0.6);
+		}
+		.firstnav a{
+			color: white;
+			font-size: 1em;
+		}
+		.secondnav{
+			float: right;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 6px;
+		}
+		.secondnav>a{
+			font-size: 1em;
+		}
+		.secondnav>ul>li>a::after{
+			padding: 5px;
+			content: "\e900";
+		}
+		.footer{
+			height: 13vh;
+			background-color: rgba(2, 2, 2, 0.4);
+			padding: 0px;
+		}
+		.footer div{
+			height: 100%;
+			width: 25%;
+			float: right;
+			transition-duration: 0.5s;
+			padding: 1% 1%;
+		}
+		.footer div:hover{
+			background-color: red;
+
+		}
+		.footer div img{
+			max-height: 70%;
+			margin: 0px 10px;
+		}
+		.footer div span{
+			color: white;
+		}
+		.footer div span:first-child{
+			font-size: 0px;
+			width: 100%;
+		}
+		.footer div span:last-child{
+			font-size: 1.7em;
+			font-weight: 550;
+		}
+		.whatsapp{
+			background-color: #25d366;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			position: fixed;
+			right: 30px;
+			bottom: 80px;
+		}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		li{
+			float: left;
+		}
+		.dcontant{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+			height: auto;
+		}
+		.drop1:hover .dcontant{
+			display: block;
+		}
+		.dcontant a{
+			display: block;
+		}
+		.dropgtu{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+		}
+		.drop2:hover .dropgtu{
+			display: block;
+		}
+		.dropgtu a{
+			display: block;
+		}
+		.dropcunsult{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+		}
+		.drop3:hover .dropcunsult{
+			display: block;
+		}
+		.dropcunsult>a{
+			display: block;
+		}
+		li>a{
+			padding: 7px;
+		}
+		.secondnav>ul>li>a:hover{
+			color: white;
+		}
+		.secondnav>ul>li>div{
+			display: none;
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);
+			border-top: 2px solid red;
+		}
+		.secondnav>ul>li>div>a{
+			display: block;
+			padding: 7px;
+		}
+		.secondnav>ul>li:hover>div{
+			display: block;
+		}
+		.secondnav>ul>li>div>a:hover{
+			color: white;
+		}
+		.lastdrop{
+			position: relative;
+			right: 5px;
+		}
+		.scrollani{
+			height: 21vh;
+			padding: 3% 70px;
+		}
+		.scrollani>div:first-child{
+			height: 50px;
+			width: 30px;
+			border-radius: 50px;
+			border: 3px solid red;
+			float: left;
+		}
+		.scrollani>.scrollball{
+			background-color: yellow;
+			height: 14px;
+			width: 14px;
+			float: left;
+			border-radius: 50%;
+			position: relative;
+			left: -21.5px;
+			top: 8px;
+			z-index: 200;
+			animation-name: scroll;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes scroll{
+			0%{
+				top: 8px;
+			}
+			25%{
+				top: 20px;
+			}
+			50%{
+				top: 30px;
+			}
+			75%{
+			
+			}
+			100%{
+				top: 8px;
+			}
+		}
+		.scrollani>span{
+			color: white;
+			font-size: 15px;
+			position: relative;
+			top: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="poster">
+		<div class="header">
+			<div class="logo">
+				<img src="https://darshan.ac.in/Content/media/DU_Logo.svg">
+			</div>
+			<div class="sidenav">
+				<div class="firstnav">
+					<ul>
+					<li class="drop1">
+						<a href="#">Research & Innovation</a>
+						<div class="dcontant">
+							<a href="#">Ph.D Programs</a>
+							<a href="#">SSIP</a>
+						</div>
+					</li>
+					<li class="drop2">
+						<a href="#">For GTU Student</a>
+						<div class="dropgtu">
+							<a href="#">old website</a>
+							<a href="#">GTU Study metirial</a>
+							<a href="#">GTU website</a>
+						</div>
+					</li>					
+					<li>
+							<a href="#">Alumni</a>
+					</li>
+					<li class="drop3">
+					<a href="#">Consultancy</a>
+						<div class="dropcunsult">
+							<a href="#">Goverment-licence</a>
+							<a href="#">Civil consulty</a>
+							<a href="#">Energy management</a>
+							<a href="#">Application software</a>
+							<a href="#">Darshan electic</a>
+							<a href="#"></a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Career</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+				<div class="secondnav">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>					
+						<li>
+							<a href="#">About</a>
+							<div>
+								<a href="#">About University</a>
+								<a href="#">About Trust</a>
+								<a href="#">Leadership</a>
+								<a href="#">IQAC</a>
+								<a href="#">Grivance Redreesal cell</a>
+								<a href="#">Anti-ragging community</a>
+								<a href="#">monitoring community</a>
+								<a href="#">SC-ST cell</a>
+								<a href="#">DU-Act</a>
+
+							</div>
+						</li>
+						<li>
+							<a href="#">Admission</a>
+							<div>
+								<a href="#">Program offerd</a>
+								<a href="#">why Darshan university</a>
+								<a href="#">How to apply</a>
+								<a href="#">Apply nowBrochures</a>
+								<a href="#">Carrer gidence booklate</a>
+								<a href="#">Shcolership</a>
+								<a href="#">Education loan</a>
+								<a href="#">Trasporatation service</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">Insitute</a>
+							<div>
+
+								<a href="#">Darshan Insitute of and Technology</a>
+								<a href="#">Darshan Insitute of and Technology for deploma</a>
+								<a href="#">Darshan Insitute of computer appliction</a>
+								<a href="#">Darshan Insitute of management</a>
+								<a href="#">Darshan Insitute of science</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">Campus</a>
+							<div>
+								<a href="#">Life at capus</a>
+								<a href="#">Infrastucture</a>
+								<a href="#">360 vurtual campus</a>
+								<a href="#">Library service</a>
+								<a href="#">Student Activity center</a>
+								<a href="#">National Cadet corps</a>
+
+							</div>
+						</li>
+						<li>
+							<a href="#">Student Corner</a>
+							<div>
+								<a href="#">Curculer</a>
+								<a href="#">Exam section</a>
+								<a href="#">University ragulation</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">Placement</a>
+							<div class="lastdrop">
+			  					<a href="#">Training and placement cell</a>
+								<a href="#">Placement news </a>
+								<a href="#">placement overview</a>
+								<a href="#">Placement 2002-23</a>
+								<a href="#">Placement 2002-22</a>
+								<a href="#">Placement 2002-21</a>
+								<a href="#">Placement 2002-20</a>
+								<a href="#">Placement 2002-19</a>
+								<a href="#">our leading recuriter</a>
+							</div>
+						</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="scrollani">
+			<div>
+				
+			</div>
+			<div 
+			class="scrollball"
+			/>
+				
+			</div>
+			<span>scroll down to find out more</span>
+		</div>
+		<div class="footer">
+			<div>
+				<img src="https://darshan.ac.in/Content/media/icon/ic-apply-now.png" align="left">
+				<span>For Admission 2023-24</span><br>
+				<span>Apply Now</span>
+			</div>
+			<div>
+				<img src="https://darshan.ac.in/Content/media/icon/ic-360-virtual-tour.png" align="left">
+				<span>Virtual</span><br>
+				<span>Campus tower</span>
+			</div>
+			<div>
+				<img src="https://darshan.ac.in/Content/media/icon/ic-brochure.png" align="left">
+				<span>Download</span><br>
+				<span>e-Brochuers</span>
+			</div>
+			<div>
+				<img src="https://darshan.ac.in/Content/media/icon/ic-inquiry.png" align="left">
+				<span>Admission</span><br>
+				<span>Inquiry</span>
+			</div>
+		</div>
+		<div class="whatsapp"></div>
+	</div>
+
+</body>
+</html>
