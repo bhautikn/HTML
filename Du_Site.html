@@ -17,6 +17,20 @@
 			background-image: url(https://darshan.ac.in/U01/Slider/Slide_0.jpg?V=1);
 			margin: 0px;
 			height: 100vh;
+			background-position: center;
+			animation-name: bgchange;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction: normal;
+
+		}
+		@keyframes bgchange{
+			0%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_0.jpg?V=1);}
+			25%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_1.jpg?V=1);}
+			50%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_5.jpg?V=1);}
+			75%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_3.jpg?V=1);}
+			100%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_4.jpg?V=1);}
 		}
 		.header{
 			height: 66vh;
@@ -217,9 +231,6 @@
 			50%{
 				top: 30px;
 			}
-			75%{
-			
-			}
 			100%{
 				top: 8px;
 			}
@@ -229,6 +240,95 @@
 			font-size: 15px;
 			position: relative;
 			top: 20px;
+		}
+		.page2{
+			height: 120vh;
+			width: 100%;
+		}
+		.page2>.div1{
+			height: 10vh;
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.page2>.div2{
+			height: 90vh;
+			width: 100%;
+		}
+		.page2>.div2>.ldiv{
+			background-color: #555555;
+		}
+		.page2>.div2 div{
+			height: 100%;
+			width: 49%;
+			float: left;
+			margin: 0.5%;
+			padding: 2% 5%;
+		}
+		.page2>.div1>img{
+			max-height: 80%;
+			margin-top: 1%;
+			padding: 2%;
+			background-color: #13294b;
+			border-radius: 5px;
+		}
+		.page2>.div1>div>a{
+			text-decoration: none;
+			color: black;
+			padding-left: 10px;
+			padding-bottom: 10px;
+		}
+		.page2>.div1>div>a:hover{
+			color: red;
+		}
+		.page2>.div1>div>span{
+			padding-top: 5px;
+		}
+		.page2>.div1>div>span a{
+			text-decoration: none;
+			color: red;
+			border-right: 2px solid gray;
+			padding: 0 1%;
+			transition-duration: 0.2s;
+		}
+		.page2>.div1>div>span a:hover{
+			text-decoration: underline;
+		}
+		.page2>.div1>div{
+			padding-top: 2%;
+		}
+		.page2>.div2>.ldiv>span{
+			font-size: 1.7em;
+		}
+		.page2>.div2>.ldiv>span:nth-child(1){
+			font-weight: 600;
+			color: red;
+		}
+		.page2>.div2>.ldiv>span:nth-child(3){
+			font-weight: 600;
+		}
+		.page2>.div2>.ldiv table td{
+			padding: 0px 10px 10px 10px;
+			line-height: 20px;
+		}
+		.page2>.div2>.ldiv table{
+			padding-top: 20;
+		}
+		.page2>.div2>.ldiv table td>span{
+			font-size: 1.3em;
+			font-weight: 600;
+		}
+		.page2>.div2>.ldiv table td:nth-child(1){
+			vertical-align: top;
+		}
+		.page2>.div2>.ldiv table td:nth-child(1)>div{
+			background-color: red;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			text-align: center;
+			color: white;
+			font-weight: 600;
 		}
 
 	</style>
@@ -395,6 +495,76 @@
 			</div>
 		</div>
 		<div class="whatsapp"></div>
+	</div>
+	<div class="page2">
+		<div class="div1">
+			<img src="https://darshan.ac.in/Content/media/icon/ic-computer-science.svg" align="left">
+			<div><a href="#">B.Tech. (Computer Science and Engineering) </a><br>
+			<span>
+				<a href="#">Placement</a>
+				<a href="#">Syllabus</a>
+				<a href="#">Faculty</a>
+				<a href="#">Laboratory</a>
+				<a href="#">ASWDC</a>
+			</span>
+		</div>
+		</div>
+
+		<div class="div2">
+			<div class="ldiv">
+				<span>Why</span>
+				<span>Study at</span>
+				<span>Darshan University?</span>
+				<table>
+					<tr>
+						<td><div>1</div></td>
+						<td>
+							<span>Dedicated Faculties</span>
+							<br>We proudly hold the record of lowest attrition rate till date to accomplish dedication.
+						</td>
+					</tr>
+					<tr>
+						<td><div>2</div></td>
+						<td>
+							<span>Disciplined Environment</span>
+							<br>Mobile App for parents to track the progression of students. Mobile phones and related gadgets are strictly prohibited for students within the institute premises.
+						</td>
+					</tr>
+					<tr>
+						<td><div>3</div></td>
+						<td>
+							<span>Skill Development Activities</span>
+							<br>We address the opportunities and challenges to encounter new demands of changing global and innovative technologies.
+						</td>
+					</tr>
+					<tr>
+						<td><div>4</div></td>
+						<td>
+							<span>Industry Interaction & Consultancy Work</span>
+							<br>We possess Civil Consultancy Cell, Energy Management Cell & ASWDC that provide a platform for students to enhance their technical & industrial skills.
+						</td>
+					</tr>
+					<tr>
+						<td><div>5</div></td>
+						<td>
+							<span>Excellent Placement Record</span>
+							<br>We proudly hold a good placement record and assure that each eligible student gets an opportunity to be placed in a recognized firm.
+						</td>
+					</tr>
+					<tr>
+						<td><div>6</div></td>
+						<td>
+							<span>Extra-curricular</span>
+							<br>We provide a platform for the cultural fest Udaan (Annual day), Thanganaat (Navratri Festival), Frolic (Technical Fest), Sprint (Annual Sports week), etc.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="rdiv">
+				<span>Program</span>
+				<span>Offered</span>
+			</div>
+		</div>
 	</div>
 
 </body>
