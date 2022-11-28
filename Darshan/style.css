@@ -1,0 +1,497 @@
+		*{
+			box-sizing: border-box;
+			font-family: sans-serif;
+
+		}
+		body{
+			margin: 0px;
+		}
+		.threeline{
+			display: none;
+		}
+		.poster{
+			background-image: url(https://darshan.ac.in/U01/Slider/Slide_0.jpg?V=1);
+			margin: 0px;
+			height: 100vh;
+			background-position: center;
+			animation-name: bgchange;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction: normal;
+
+		}
+		@keyframes bgchange{
+			0%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_0.jpg?V=1);}
+			25%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_1.jpg?V=1);}
+			50%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_5.jpg?V=1);}
+			75%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_3.jpg?V=1);}
+			100%{background-image: url(https://darshan.ac.in/U01/Slider/Slide_4.jpg?V=1);}
+		}
+		.header{
+			height: 10vh;
+		}
+		.header2{
+			height: 56vh;
+		}
+		.logo{
+			height: 10vh;
+			width: 15%;
+			float: left;
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+		.logo img{
+			max-height: 100%;
+		}
+		.sidenav{
+			height: 20vh;
+			width: 70%;
+			float: right;
+			padding-top: 15px;
+
+		}
+		.sidenav a{
+			text-decoration: none;
+			color: black;
+			padding: 6px;
+			transition-duration: 0.5s;
+		}
+		.sidenav a:hover{
+			background-color: red;
+		}
+
+		.firstnav{
+			box-sizing:content-box;
+			height:auto;
+			padding: 7px;
+			float: right;
+			background-color: rgba(5, 5, 5, 0.6);
+		}
+		.firstnav a{
+			color: white;
+			font-size: 1em;
+		}
+		.secondnav{
+			float: right;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 6px;
+		}
+		.secondnav>a{
+			font-size: 1em;
+		}
+		.secondnav>ul>li>a::after{
+			padding: 5px;
+			content: "\e900";
+		}
+		.footer{
+			height: 13vh;
+			background-color: rgba(2, 2, 2, 0.4);
+			padding: 0px;
+		}
+		.footer div{
+			height: 100%;
+			width: 25%;
+			float: right;
+			transition-duration: 0.5s;
+			padding: 1% 1%;
+		}
+		.footer div:hover{
+			background-color: red;
+
+		}
+		.footer div img{
+			max-height: 70%;
+			margin: 0px 10px;
+		}
+		.footer div span{
+			color: white;
+		}
+		.footer div span:first-child{
+			font-size: 0px;
+			width: 100%;
+		}
+		.footer div span:last-child{
+			font-size: 1.7em;
+			font-weight: 550;
+		}
+		.whatsapp{
+			background-color: #25d366;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			position: fixed;
+			right: 30px;
+			bottom: 80px;
+		}
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		li{
+			float: left;
+		}
+		.dcontant{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+			height: auto;
+		}
+		.drop1:hover .dcontant{
+			display: block;
+		}
+		.dcontant a{
+			display: block;
+		}
+		.dropgtu{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+		}
+		.drop2:hover .dropgtu{
+			display: block;
+		}
+		.dropgtu a{
+			display: block;
+		}
+		.dropcunsult{
+			display: none;
+			background-color: rgba(5, 5, 5, 0.8);
+			color: white;
+			position: absolute;
+		}
+		.drop3:hover .dropcunsult{
+			display: block;
+		}
+		.dropcunsult>a{
+			display: block;
+		}
+		li>a{
+			padding: 7px;
+		}
+		.secondnav>ul>li>a:hover{
+			color: white;
+		}
+		.secondnav>ul>li>div{
+			display: none;
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);
+			border-top: 2px solid red;
+		}
+		.secondnav>ul>li>div>a{
+			display: block;
+			padding: 7px;
+		}
+		.secondnav>ul>li:hover>div{
+			display: block;
+		}
+		.secondnav>ul>li>div>a:hover{
+			color: white;
+		}
+		.lastdrop{
+			position: relative;
+			right: 5px;
+		}
+		.scrollani{
+			height: 21vh;
+			padding: 3% 70px;
+		}
+		.scrollani>div:first-child{
+			height: 50px;
+			width: 30px;
+			border-radius: 50px;
+			border: 3px solid red;
+			float: left;
+		}
+		.scrollani>.scrollball{
+			background-color: yellow;
+			height: 14px;
+			width: 14px;
+			float: left;
+			border-radius: 50%;
+			position: relative;
+			left: -21.5px;
+			top: 8px;
+			z-index: 200;
+			animation-name: scroll;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes scroll{
+			0%{
+				top: 8px;
+			}
+			25%{
+				top: 20px;
+			}
+			50%{
+				top: 30px;
+			}
+			100%{
+				top: 8px;
+			}
+		}
+		.scrollani>span{
+			color: white;
+			font-size: 15px;
+			position: relative;
+			top: 20px;
+		}
+		.page2{
+			height: 120vh;
+			width: 100%;
+		}
+		.page2>.div1{
+			height: 10vh;
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.page2>.div2{
+			width: 100%;
+		}
+		.page2>.div2>.ldiv{
+			background-color: #eeeeee;
+		}
+		.page2>.div2>.ldiv>div{
+			height: 5vh;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.page2>.div2 div{
+			height: 100%;
+			width: 49%;
+			float: left;
+			margin: 0 0.5%;
+			padding: 1% 5%;
+		}
+		.page2>.div1>img{
+			max-height: 80%;
+			margin-top: 1%;
+			padding: 2%;
+			background-color: #13294b;
+			border-radius: 5px;
+		}
+		.page2>.div1>div>a{
+			text-decoration: none;
+			color: black;
+			padding-left: 10px;
+			padding-bottom: 10px;
+		}
+		.page2>.div1>div>a:hover{
+			color: red;
+		}
+		.page2>.div1>div>span{
+			padding-top: 5px;
+		}
+		.page2>.div1>div>span a{
+			text-decoration: none;
+			color: red;
+			border-right: 2px solid gray;
+			padding: 0 1%;
+			transition-duration: 0.2s;
+		}
+		.page2>.div1>div>span a:hover{
+			text-decoration: underline;
+		}
+		.page2>.div1>div{
+			padding-top: 2%;
+		}
+		.page2>.div2>.ldiv>div>span{
+			font-size: 1.7em;
+		}
+		.page2>.div2>.ldiv>div>span:nth-child(1){
+			font-weight: 600;
+			color: red;
+		}
+		.page2>.div2>.ldiv>div>span:nth-child(3){
+			font-weight: 600;
+		}
+		.page2>.div2>.ldiv table td{
+			padding: 0px 30px 30px 30px;
+			line-height: 20px;
+		}
+		.page2>.div2>.ldiv table{
+			padding-top: 20;
+		}
+		.page2>.div2>.ldiv table td>span{
+			font-size: 1.3em;
+			font-weight: 600;
+		}
+		.page2>.div2>.ldiv table td:nth-child(1){
+			vertical-align: top;
+		}
+		.page2>.div2>.ldiv table td:nth-child(1)>div{
+			background-color: red;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			text-align: center;
+			color: white;
+			font-weight: 600;
+		}
+		.page2>.div2>.rdiv>.div1>span:nth-child(1){
+			font-weight: 600;
+			color: red;
+			font-size: 1.5em;
+		}
+		.page2>.div2>.rdiv>.div1>span{
+			font-size: 1.5em;
+		}
+		.page2>.div2>.rdiv>.div1{
+			height: 5vh;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		.page2>.div2>.rdiv>table img{
+			max-height: 50px;
+		}
+		.page2>.div2>.rdiv>table span{
+			font-size: 1.4em;
+			font-weight: 600;
+		}
+		.page2>.div2>.rdiv>table td{
+			padding: 15px;
+		}
+		.page2>.div2>.rdiv>table img{
+			background-color: #13294b;
+			border-radius: 6px;
+		}
+		.page2>.div2>.rdiv>.div2{
+			width: 100%;
+			float: left;
+			border:7px solid #eeeeee;
+		}
+		.page2>.div2>.rdiv>.div2>.div1{
+			padding: 0px;
+		}
+		.page2>.div2>.rdiv>.div2 span:nth-child(1){
+			font-size: 1.3em;
+			font-weight: 600;
+			line-height: 50px;
+		}
+		.page2>.div2>.rdiv>.div2 span:nth-child(4){
+			color: red;
+		}
+		.page2>.div2>.rdiv>.div2>.div2 div:nth-child(1){
+			width: 100%;
+			height: 50px;
+			background-color: orange;
+			float: right;
+			padding: 15px;
+			margin-bottom: 20px;
+			text-align: center;
+			border-radius: 50px;
+		}
+		.page2>.div2>.rdiv>.div2>.div2 div:nth-child(2){
+			width: 100%;
+			padding: 15px;
+			border-radius: 50px;
+			text-align: center;
+			height: 50px;
+			background-color: red;
+			float: right;
+		}
+		.colorline{
+			width: 100%;
+			height: 40vh;
+			background-image: linear-gradient(to right,#13294b,red);
+		}
+		.colorline div{
+			height: 100%;
+			width: 25%;
+			float: left;
+		}
+		.colorline div{
+			font-size: 1.3em;
+			color: white;
+			padding: 7%;
+			text-align: center;
+		}
+		.colorline div>span:nth-child(1){
+			font-size: 2em;
+			font-weight: 600;
+			margin-top: 60px;
+		}
+		.colorline .div2 span:nth-child(2){
+			font-size: 1.5em;
+			font-weight: 600;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@media (max-width:800px){
+			.sidenav{
+				display: none;
+			}
+			.header{
+				background-color: rgba(255, 255, 255, 0.7);
+			}
+			.header2{
+				height: 40vh;
+			}
+			.threeline{
+				float: right;
+				display: block;
+				height: 100%;
+				width:100px;
+				margin-top: 10px;
+			}
+			.threeline>div{
+				background-color: black;
+				height: 1px;
+				width: 40%;
+				border-radius: 6px;
+				margin: 10px;
+			}
+			.footer{
+				height: 30vh;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.footer div{
+				width: 50%;
+				height: 50%;
+			}
+			.footer div img{
+				max-height: 50%;
+			}
+			.page2>.div1{
+				height: 20vh;
+			}
+			.page2>.div1>img{
+				height: 50%;
+			}
+			.page2>.div2 div{
+				width: 100%;
+				margin: 0px;
+			}
+			.colorline div{
+				width: 50%;
+				height: 50%;
+			}
+			.colorline{
+				background-image: linear-gradient(60deg,#13294b,red);
+				height: 50vh;
+			}
+		}
