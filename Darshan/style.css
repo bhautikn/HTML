@@ -122,6 +122,7 @@
 			position: fixed;
 			right: 30px;
 			bottom: 80px;
+			z-index: 200;
 		}
 		ul{
 			list-style-type: none;
@@ -240,10 +241,6 @@
 			position: relative;
 			top: 20px;
 		}
-		.page2{
-			height: 120vh;
-			width: 100%;
-		}
 		.page2>.div1{
 			height: 10vh;
 			width: 40%;
@@ -333,6 +330,9 @@
 			color: white;
 			font-weight: 600;
 		}
+		.page2>.div2>.rdiv{
+			margin-bottom: 50px;
+		}
 		.page2>.div2>.rdiv>.div1>span:nth-child(1){
 			font-weight: 600;
 			color: red;
@@ -420,9 +420,293 @@
 			font-size: 1.5em;
 			font-weight: 600;
 		}
+		.page2>.div2>div:hover{
+			box-shadow: 2px 2px 15px gray;
+		}
+		.page2>.div2 .ldiv, .page2>.div2 .rdiv{
+			transition-duration: 0.5s;
+			border-radius: 6px;
+		}
+		.page3>.header{
+			font-size: 1.5em;
+			font-weight: 600;
+			text-align: center;
+			margin: 20px;
+			height: 5vh;
+		}
+		.page3{
+			padding: 0px 4%;
+		}
+		.page3>.leftdiv{
+			width: 25%;
+			float: left;	
+		}
+		.page3>.rightdiv{
+			float: left;
+			width: 75%;
+			height: 20vh;
+		}
+		.page3>.leftdiv>.div1{
+			text-align: center;
+			padding: 0px;
+			box-shadow: 2px 2px 5px lightgray;
+			border-radius: 20px;
+			transition-duration: 1s;
+			position: relative;
+		}
+		.page3>.leftdiv>.div1:hover{
+			box-shadow: 2px 2px 20px black;
+		}
+		.page3>.leftdiv>.div1 .t1{
+			font-size: 1.6em;
+			font-family: math;
+			font-weight: 600;
+			color: white;
+			width: 100%;
+		}
+		.page3>.leftdiv>.div1 .span{
+			background-image: linear-gradient(red,red,red,white);
+			padding: 50px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
 
-
-
+		}
+		.page3>.leftdiv>.div1>table tr th:nth-child(1){
+			text-align: left;
+		}
+		.page3>.leftdiv>.div1>table tr td:nth-child(2),.page3>.leftdiv>.div1>table tr td:nth-child(3){
+			text-align: right;
+		}
+		.page3>.leftdiv>.div1>table tr:nth-child(1){
+			color: red;
+			border: px solid black;
+		}
+		.page3>.leftdiv>.div1>.div2{
+			text-align: center;
+			padding: 20px;
+		}
+		.page3>.leftdiv>.div1>.div2 span{
+			font-weight: 600;
+			padding: 10px;
+			border-radius: 60px;
+			transition-duration: 0.5s;
+		}
+		.page3>.leftdiv>.div1>.div2 span:hover{
+			background-color: gray;
+			color: white;
+		}
+		.page3 .rightdiv>div {
+			border: 1px solid #bbbbbb;
+			margin: 0px 10px 10px;
+			border-radius:15px;
+			text-align: center;
+			transition-duration: 0.2s;
+			position: relative;
+		}
+		.page3 .rightdiv>div:hover{
+			box-shadow: 2px 2px 10px gray;
+			top: -5px;
+		}
+		.page3 .rightdiv{
+			display: flex;
+			flex-wrap: wrap;
+			justify-items: center;
+		}
+		.page3 .rightdiv .about .name{
+			border-bottom: 1px solid lightgray;
+			padding: 5px;
+			font-weight: 600;
+			line-height: 50px;
+		}
+		.rightdiv>div .img img{
+			height: 10px;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			height: 250px;
+			background-color: #ddddff;
+		}
+		.page3 .rightdiv .about .companylogo{
+			color: white;
+			font-size: 1.3em;
+			font-weight: 600;
+			border-radius: 6px;
+			background-color: lightgray;
+			padding: 20px;
+		}
+		.page3 .rightdiv .about .place{
+			line-height: 50px;
+			font-size: 0.7em;
+			color: gray;
+		}
+		.morecompany{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		.morecompany div{
+			width: 30%;
+			margin: 10px 2px;
+			transition-duration: 0.5s;
+			transition-timing-function: ease;
+			border-radius: 2px;
+			position: relative;
+		}
+		.morecompany div:hover{
+			box-shadow: 5px 5px 10px gray;
+			top: -2px;
+		}
+		.morecompany img{
+			max-height: 80px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.leadrecu{
+			font-weight: 600;
+			text-align: center;
+			padding: 20px;
+			font-size: 1.3em;
+		}
+		.header23{
+			font-weight: 600;
+			font-size: 1.7em;
+			text-align: center;
+			padding: 50px;
+			background-color: #dddddd;
+		}
+		.page4{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: column;
+			padding: 0px 20px;
+			justify-content: space-between;
+			align-items: flex-start;
+			background-color: #dddddd;
+		}
+		.page4 .row{
+			width: 24%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 2px;
+		}
+		.page4 .row .col div{
+			padding: 20px;
+		}
+		.page4 .row .col{
+			height: auto;
+			width: 100%;
+			background-color: white;
+			margin: 10px;
+			border-radius: 6px;
+			position: relative;
+			transition-duration: 0.5s;
+			box-shadow: 2px 2px 10px lightgray;
+		}
+		.page4 .row .col:hover{
+			box-shadow: 5px 5px 20px black;
+			top: -5px;
+		}
+		.page4 .row .col img{
+			width: 100%;
+			z-index: 200;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+		}
+		.page4 .row .col .date{
+			color: gray;
+			font-size: 0.9em;
+			line-height: 30px;
+		}
+		.page4 .row .col .about{
+			font-weight: 600;
+		}
+		.lastfooter{
+			background-color: #111111;
+			height: 65vh;
+			padding: 0px 2%;
+		}
+		.divfooter{
+			width: 23%;
+			float: left;
+			margin: 15px;
+			color: white;
+		}
+		.divfooter .footerheader{
+			color: red;
+			text-align: left;
+			font-weight: 600;
+		}
+		.divfooter img{
+			width: 50%;
+			text-align: left;
+			padding: 20px 0;
+		}
+		.divfooter p{
+			text-align: justify;
+			line-height: 25px;
+			color: lightgray;
+		}
+		.divfooter .line{
+			height: 1px;
+			background-color: lightgray;
+			margin-top: 15px;
+			width: 60px;
+		}
+		.divfooter a{
+			width: 100%;
+			text-decoration: none;
+			color: lightgray;
+			line-height: 40px;
+			padding: 15px 0;
+		}
+		.divfooter a:hover{
+			text-decoration: underline;
+		}
+		.divfooter .a{
+			border-bottom: 1px solid lightgray;
+		}
+		.divfooter span{
+			text-align:right;		
+		}
+		.divfooter .arrow{
+			width: 20px;
+			float: right;
+		}
+		.divfooter .arrow span{
+			padding-top: 15px;
+		}
+		.divfooter .box{
+			height: 30px;
+			width: 30px;
+			background-color: gray;
+			float: left;
+			margin-right: 20px;
+		}
+		.divfooter .info{
+			padding: 15px;
+			font-size: 0.85em;
+		}
+		.divfooter .info:hover{
+			text-decoration: underline;
+		}
+		.reallylastfooter{
+			background-color: black;
+			color: white;
+			height: 10vh;
+			padding: 30px;
+		}
+		.reallylastfooter span{
+			
+		}
+		.reallylastfooter a{
+			color: white;
+			text-decoration: none;
+		}
+		.reallylastfooter a:hover{
+			text-decoration: underline;
+		}
 
 
 
