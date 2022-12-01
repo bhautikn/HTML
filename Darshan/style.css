@@ -761,7 +761,7 @@
 				max-height: 50%;
 			}
 			.page2>.div1{
-				height: 20vh;
+				height: 10vh;
 			}
 			.page2>.div1>img{
 				height: 50%;
@@ -778,4 +778,69 @@
 				background-image: linear-gradient(60deg,#13294b,red);
 				height: 50vh;
 			}
+			.page3>.leftdiv, .page3>.rightdiv{
+				width: 100%;
+				height: auto;
+			}
+			.page3>.rightdiv>div{
+				width: 47%;
+			}
+			.page4 .row{
+				width: 49%;
+			}
+			.page2>.div1{
+				width: 70%;
+			}
+			.footer div span{
+				font-size: 0.8em;
+			}
+			.footer div span:last-child{
+				font-size: 1.2em;
+			}
+			.lastfooter .divfooter{
+				width: 45%;
+			}
+			.lastfooter{
+				height: auto;
+			}
+			.lastfooter{
+				height: 200vh;
+			}
+
+		}
+		@media (max-width:400px){
+
+			.page3>.rightdiv>div{
+				width: 100%;
+			}
+			.page4 .row{
+				width: 100%;
+			}
+			.page2>.div1{
+				width: 100%;
+				font-size: 0.8em;
+				text-align: center;
+			}
+			.footer div span{
+				font-size: 0.5em;
+			}
+			.footer div span:last-child{
+				font-size: 0.8em;
+			}
+			.page2>.div2 .ldiv{
+				padding: 0px;
+			}
+			.page2 > .div2 > .ldiv > div > span{
+				font-size: 0.8em;
+			}
+			.page3>.header{
+				margin: 50px;
+			}
+			.lastfooter .divfooter{
+				width: 100%;
+			}
+			.lastfooter{
+				height: 240vh;
+			}
+
 		}
