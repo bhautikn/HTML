@@ -444,7 +444,7 @@
 		.page3>.rightdiv{
 			float: left;
 			width: 75%;
-			height: 20vh;
+			height: 100vh;
 		}
 		.page3>.leftdiv>.div1{
 			text-align: center;
@@ -498,6 +498,9 @@
 		}
 		.page3 .rightdiv>div {
 			border: 1px solid #bbbbbb;
+			width: 22%;
+			float: left;
+			height: 50vh;
 			margin: 0px 10px 10px;
 			border-radius:15px;
 			text-align: center;
@@ -507,11 +510,6 @@
 		.page3 .rightdiv>div:hover{
 			box-shadow: 2px 2px 10px gray;
 			top: -5px;
-		}
-		.page3 .rightdiv{
-			display: flex;
-			flex-wrap: wrap;
-			justify-items: center;
 		}
 		.page3 .rightdiv .about .name{
 			border-bottom: 1px solid lightgray;
@@ -524,6 +522,7 @@
 			border-top-left-radius: 15px;
 			border-top-right-radius: 15px;
 			height: 250px;
+			width: 100%;
 			background-color: #ddddff;
 		}
 		.page3 .rightdiv .about .companylogo{
@@ -624,11 +623,11 @@
 		}
 		.lastfooter{
 			background-color: #111111;
-			height: 65vh;
+			height: 75vh;
 			padding: 0px 2%;
 		}
 		.divfooter{
-			width: 23%;
+			width: 22%;
 			float: left;
 			margin: 15px;
 			color: white;
@@ -696,9 +695,6 @@
 			color: white;
 			height: 10vh;
 			padding: 30px;
-		}
-		.reallylastfooter span{
-			
 		}
 		.reallylastfooter a{
 			color: white;
@@ -783,7 +779,7 @@
 				height: auto;
 			}
 			.page3>.rightdiv>div{
-				width: 47%;
+				width: 45%;
 			}
 			.page4 .row{
 				width: 49%;
@@ -835,6 +831,9 @@
 			}
 			.page3>.header{
 				margin: 50px;
+			}
+			.page3>.rightdiv>div{
+				width: 100%;
 			}
 			.lastfooter .divfooter{
 				width: 100%;
