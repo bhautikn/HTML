@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#fore-div{
+			height: 50vh;
+			z-index: 200;
+			background: red;
+			backdrop-filter: blur(150px);
+			background: rgba(20, 12, 32, 0.5);
+			border: 20px solid white;
+			transform: perspective(-2000px);
+			padding: 20px;
+			font-size: 2.8em;
+			cursor: pointer;
+			color:lightblue;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		#back-color{
+			height: 1000px;
+			background-image: radial-gradient(lightseagreen, transparent);
+			border-radius: 50%;
+			width: 1000px;
+			position: absolute;
+		}
+		.hide{
+			height: 49vh;
+			z-index: 500;
+			position: relative;
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="back-color">
+		
+	</div>
+	<div id="fore-div">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<div class="hide"></div>
+	<script type="text/javascript">
+		fore = document.getElementById('fore-div');
+		back = document.getElementById('back-color');
+		fore.addEventListener("mousemove", (event)=>{
+			back.style.top = (event.y-500)+"px";
+			back.style.left = (event.x-500)+"px";
+			fore.style.transform = 'rotateX('+(event.x/5)+'deg)';
+			fore.style.transform = 'rotateY('+(event.y/40)+'deg)';
+			// fore.style.transform = 'rotateZ('+(event.x/event.x)+'deg)';
+		})
+	</script>
+</body>
+</html>

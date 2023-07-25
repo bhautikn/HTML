@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            Contex Menu
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            #menu-box, #sub-div-of-new{
+                background-color: smokewhite;
+                width: fit-content;
+                box-shadow: 2px 2px 15px lightgrey;
+                padding: 10px;
+                border-radius: 5px;
+                position: absolute;
+                display: none;
+                user-select: none;
+                animation: animation 800ms;
+                border: 1px solid lightgray;
+            }
+            i{
+                margin: 5px 7px;
+            }
+            @keyframes animation{
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+            .item{
+                margin: 3px;
+                padding: 4px 10px;
+                cursor: pointer;
+                transition-duration: 500ms;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+            .item:hover{
+                background: lightgrey;
+            }
+            body,html {
+                width:100%;
+                height:100%;
+            }
+
+        </style>
+    </head>
+    <body oncontextmenu="return false">
+        Right Click EnyWhere
+        <div id="menu-box">
+            <div class="item"><i class="fa fa-th-large"></i>View</div>
+            <div class="item"><i class="fa fa-sort-alpha-desc"></i>Short by</div>
+            <div class="item"><i class="fa fa-refresh"></i>Refresh</div>
+            <hr>
+            <div class="item" id="new"><i class="fa fa-plus-circle"></i>New
+                <div class="new-sub-div" style="float: right;">❯</div>
+            </div>
+            <hr>
+            <div class="item"><i class="fa fa-pencil"></i>Personalize</div>
+            <div class="item"><i class="fa fa-external-link"></i>Show more option</div>
+        </div>
+        <div id="sub-div-of-new">
+            <div class="item"><i class="fa fa-folder"></i>folder</div>
+            <div class="item"><i class="fa fa-external-link"></i>Shortcut</div>
+            <div class="item"><i class="fa fa-image"></i>Bitmap image</div>
+            <div class="item"><i class="fa fa-file-text"></i>Text Document</div>
+        </div>
+        <script>
+            let isOpen = false;
+            menu = document.getElementById('menu-box');
+            newDiv = document.getElementById('new');
+            subDivOfNew = document.getElementById('sub-div-of-new');
+            
+            document.body.addEventListener("contextmenu", (e)=>{
+                x = e.x;
+                y = e.y;
+                if(x+menu.offsetWidth > screen.availWidth){
+                    x -= menu.offsetWidth;
+                }
+                if(y+menu.offsetHeight+90 > screen.availHeight){
+                    y-= menu.offsetHeight;
+                }
+                menu.style.top = y+'px';
+                menu.style.left = x+'px';
+                menu.style.display = 'block';
+                isOpen = true;
+            });
+            document.body.addEventListener("click", (e)=>{
+                isOpen = false;
+                menu.style.display = 'none';
+            });
+            newDiv.addEventListener("mouseover", (e)=>{
+                subDivOfNew.style.top = (e.y-10)+'px';
+                subDivOfNew.style.left = (x+menu.offsetWidth)+'px';
+                subDivOfNew.style.display = 'block';
+            })
+            newDiv.addEventListener("mouseleave", (e)=>{
+                setTimeout(()=>{
+                    subDivOfNew.style.display = 'none';
+                }, 200);  
+            });
+            subDivOfNew.addEventListener("mouseover", (e)=>{
+                setTimeout(()=>{subDivOfNew.style.display = 'block';}, 190);
+
+            });
+            subDivOfNew.addEventListener("mouseleave", (e)=>{
+                subDivOfNew.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

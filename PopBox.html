@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pop up box</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		#box{
+			height: 50vh;
+			width: 40%;
+			background: seagreen;
+			position: absolute;
+			top: calc(50% - 25vh);
+			right: 30%;
+			display: none;
+			animation-name: ani;
+			animation-duration: 0.2s;
+			border-radius: 5px;
+			animation-timing-function: ease-in-out;
+			transition-duration: 0.5s;
+		}
+		#cross{
+			font-weight: bolder;
+			color: white;
+			cursor: pointer;
+			font-family: sans-serif;
+			font-size: 1.2em;
+			background: red;
+			width: max-content;
+			padding: 5px 10px;
+			margin: 5px;
+			margin-left: auto;
+			transition-duration: 0.5s;
+			border-radius: 5px;
+		}
+		#cross:hover{
+			background: darkred;
+		}
+		@keyframes ani{
+			0%{
+				transform: scale(0.3);
+			}
+			25%{
+				transform: scale(0.5);
+			}
+			50%{
+				transform: scale(1.0);
+			}
+			75%{
+				transform: scale(1.1);
+			}
+			100%{
+				transform: scale(1.0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<button onclick="popBox()">
+		ClickMe
+	</button>
+	<div id="box">
+		<div id="cross">X</div>
+	</div>
+	<script type="text/javascript">
+		popDiv = document.getElementById('box');
+		cross = document.getElementById('cross');
+
+		cross.addEventListener("click",()=>{
+			setTimeout(()=>{ popDiv.style.transform = "scale(1.2)";}, 100);
+			setTimeout(()=>{ popDiv.style.transform = "scale(1)";}, 200);
+			setTimeout(()=>{
+				popDiv.style.display = "none";
+			}, 200);
+		})
+
+		function popBox(){
+			popDiv.style.display = "block";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Change image</title>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .div-box{
+            background-color: seagreen;
+            height: 70vh;
+            width: 70%;
+            padding: 10px;
+            margin: 50px auto;
+        }
+        .change-div{
+            background-color: #eee;
+            height: 70vh;
+            width: 10%;
+            position: absolute;
+            font-size: 7em;
+            color:grey;
+            font-weight: bold;
+            text-align: center;
+            transition-duration: 600ms;
+            cursor: pointer;
+            user-select: none;
+        }
+        .dot-div-container{
+            width: max-content;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .div-dot{
+            width: 20px;
+            height: 20px;
+            background-color: lightgrey;
+            margin: 5px;
+            float: left;
+            transition-duration: 500ms;
+        }
+        .div-dot:hover{
+            background-color: grey;
+        }
+        .change-div:hover{
+            background-color: #ccc;
+        }
+        .change-div > .arrow{
+            margin: 120% 0;
+        }
+        #left-div{
+            left: 15px;
+        }
+        #right-div{
+            right: 15px;
+        }
+    </style>
+    <body>
+        <div id="left-div" class="change-div">
+            <div class="arrow">❮</div>
+        </div>
+        <div id="right-div" class="change-div">
+            <div class="arrow">❯</div>
+        </div>
+        <div class="div-box" style="background-color: red;"></div>
+        <div class="div-box" style="background-color: green; display: none;"></div>
+        <div class="div-box" style="background-color: purple; display: none;"></div>
+        <div class="div-box" style="background-color: black; display: none;"></div>
+        <div class="dot-div-container">
+            <div class="div-dot" onclick="changeDiv(0)" style="background: grey;"></div>
+            <div class="div-dot" onclick="changeDiv(1)"></div>
+            <div class="div-dot" onclick="changeDiv(2)"></div>
+            <div class="div-dot" onclick="changeDiv(3)"></div>
+        </div>
+        
+    </body>
+    <script>
+        divs = document.getElementsByClassName('div-box');
+        leftDiv = document.getElementById('left-div');
+        rightDiv = document.getElementById('right-div');
+        dots = document.getElementsByClassName('div-dot');
+        var counter = 0;
+        rightDiv.addEventListener("click", () => {counterDiv(1);})
+        leftDiv.addEventListener("click", () => {counterDiv(-1);})
+        function counterDiv(index){
+            counter = counter+index;
+            changeDiv(counter);
+        }
+        function changeDiv(index){
+            for (i = 0; i < divs.length; i++){
+                divs[i].style.display = "none";
+                dots[i].style.background = "lightgrey";
+            }
+            if(index < 0 ) index = (counter = divs.length-1);
+            if(index > divs.length-1) index = (counter = 0);
+            divs[index].style.display = "block";
+            dots[index].style.background = "grey";
+            counter = index;
+        }
+    </script>
+</html>
