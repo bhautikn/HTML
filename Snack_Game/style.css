@@ -1,0 +1,153 @@
+:not(:root):fullscreen::backdrop {
+	background-color: rgb(35, 163, 90);
+}
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+.snack{
+	border-radius: 10px;
+	background: #002c1a;
+	position: absolute;
+}
+#food{
+	border-radius: 50px;
+	background: darkred;
+	position: absolute;
+}
+body{
+	margin: 0px;
+	overflow: hidden;
+	background-color: rgb(35, 163, 90);
+}
+.score-bord{
+	color: rgb(28, 28, 28);
+	border: 1 px solid grey;
+	padding: 10px;
+	font-weight: bolder;
+	position: absolute;
+	right: auto;
+	top: 0;
+	font-size: 1.5em;
+	font-family: math;
+	z-index: 200;
+	transition-duration: 0.5s;
+	display: none;
+	animation-name: change-score;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+@keyframes change-score{
+	from{ opacity: 0; }
+	to{ opacity: 1; }
+}
+@keyframes end-game-bord-ani{
+	0%{ transform: scale(0.5); }
+	30%{ transform: scale(1); }
+	60%{ transform: scale(1.1); }
+	100%{ transform: scale(1); }
+}
+.scoreTxt{
+	color: rgb(28, 28, 28);
+	padding: 10px;
+	font-weight: bolder !important;
+	position: absolute;
+	right: 50%;
+	top: 0px;
+	font-size: 1.5em;
+	font-family: math;
+	z-index: 200;
+}
+.scoreBg{
+	width: 80%;
+	padding: 15px;
+	background-image: linear-gradient(to left, transparent, rgb(85, 150, 85), transparent);
+	margin: 7px auto;
+}
+.score-bord{
+	right: 49%;
+}
+#end-game-bord{
+	height: 50vh;
+	width: 50%;
+	background-color: lightblue;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	/* transform: translateX(50%) translateY(50%); */
+	border-radius: 5px;
+	box-shadow: 12px 12px 30px black;
+	z-index: 500;
+	display: none;
+	animation: end-game-bord-ani 200ms linear;
+}
+.cross-hair{
+	background-color: darkred;
+	color: white;
+	font-size: 2em;
+	border-radius: 0 5px 0 5px;
+	font-weight: bolder;
+	width: max-content;
+	padding: 0.8% 2.5%;
+	cursor: pointer;
+	margin-left: auto;
+	user-select: none;
+	transition-duration: 500ms;
+}
+.score-in-box{
+	padding: 10px 50px;
+	font-size: 1.5em;
+}
+.cross-hair:hover{
+	background-color: rgb(195, 41, 41);
+}
+.box-btn{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10%;
+	background-color: seagreen;
+}
+.box-btn div{
+	margin: 1%;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	width: 48%;
+	border-radius: 20px;
+	user-select: none;
+	font-size: 1.3em;
+	float: left;
+	background-color: seagreen;
+	transition-duration: 500ms;
+}
+.box-btn div:hover{
+	background-color: #27622e;
+}
+.out-massage{
+	background-color: rgb(169, 86, 86);
+	text-align: center;
+	padding: 10px;
+	font-size: larger;
+	font-weight: lighter;
+	margin: 5px;
+}
+.new{
+	color: red;
+	font-weight: bold;
+}
+#space-to-continue{
+	background-image: linear-gradient(to left, transparent, rgb(76, 63, 158), transparent);
+	padding: 10px;
+	color: aliceblue;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	font-size: 2em;
+}
+#setting{
+	position: fixed;
+	top: 0;
+	right: 0;
+}
