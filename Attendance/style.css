@@ -1,0 +1,276 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --txt-color: #333;
+    --back-color: white;
+    --btn-bg-color: seagreen;
+    --light-bg-color: whitesmoke;
+    --btn-bg-hover-color:  rgb(40, 121, 75);
+    --hover-color: #ddd;
+}
+body{
+    background-color: var(--back-color);
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 10px;
+}
+.left-container{
+    width: max-content;
+    float: left;
+    padding: 20px;
+}
+.right-container{
+    float: right;
+    width: 60%;
+    font-size: 1.3em;
+    height: 50vh;
+    padding: 20px;
+}
+#absent-roll{
+    width: 100%;
+    border: 1px solid grey;
+    font-size: 1.2em;
+    padding: 12px;
+    height: 100%;
+}
+.btn{
+    padding: 0;
+    border: none;
+    color: white;
+    background-color: var(--btn-bg-color);
+    /* border-radius: 2px; */
+    margin: 5px;
+    font-size: 1.5em;
+    user-select: none;
+}
+.btn:hover{
+    transition-duration: 100ms;
+    background-color:var(--btn-bg-hover-color);
+    opacity: 0.7;
+}
+#roll-no{
+    width: max-content;
+    color: var(--txt-color);
+    font-weight: bolder;
+    font-size: 10em;
+    height: auto;
+}
+#roll-no div{
+    width: max-content;
+    animation: change-digit 200ms;
+    position: relative;
+    float: left;
+}
+#name-plate{
+    font-size: 2em;
+    font-weight: bold;
+    color: lightseagreen;
+    padding-top: 30px;
+    float: left;
+    width: 100%;
+    height: 10vh;
+}
+hr{
+    color: var(--light-bg-color);
+}
+textarea{
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--back-color);
+    color: var(--txt-color);
+}
+nav{
+    padding: 10px;
+}
+#speaker-div{
+    padding: 10px 10px 5px 10px;
+    border: 2px solid seagreen;
+    background-color: var(--light-bg-color);
+    border-radius: 50%;
+    transition-duration: 100ms;
+    float: left;
+    cursor: pointer;
+    width: max-content;
+}
+#speaker-div path{
+    stroke: seagreen;
+} 
+#speaker-div:hover{
+    background-color:var(--back-color);
+}
+.button-set-2{
+    width: max-content;
+    float: left;
+    border-bottom: none;
+    padding: 5px 5px 0px 5px;
+    border: 1px solid rgb(75, 84, 87);
+    transition-duration: 200ms;
+    float: right;
+}
+.button-set-2 path{
+    stroke: var(--txt-color);
+}
+.button-set-2:hover{
+    background-color: var(--hover-color);
+}
+.check-class{
+    color: white;
+    background-color: blue;
+    margin: 6px 10px;
+    width: max-content;
+    float: left;
+}
+.check-class select{
+    padding: 10px;
+    font-size: 1em;
+    background-color: var(--hover-color);
+    color: var(--txt-color);
+    outline: none;
+    /* border: none; */
+}
+.arrows{
+    background-color: var(--hover-color);
+    color: var(--txt-color);
+    padding: 7px;
+}
+.btn-internal{
+    padding: 7px 5px;
+    background-color: blue ;
+}
+@keyframes change-digit{
+	from{ 
+        opacity: 0;
+        top: 30px; 
+    }
+	to{ 
+        opacity: 1; 
+        top: 0; 
+    }
+}
+@keyframes animation-contex{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#context-menu{
+    display: none;
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--back-color);
+    color: var(--txt-color);
+    z-index: 100;
+    background-color: smokewhite;
+    width: fit-content;
+    box-shadow: 2px 2px 15px var(--back-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    user-select: none;
+    animation: animation-contex 800ms;
+    border: 1px solid lightgray; 
+}
+#context-menu .item{
+    padding : 5px;
+    cursor: pointer;
+    transition-duration: 100ms;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#context-menu .item input[type="range"]{
+    width: 100%;
+}
+#context-menu .item:hover{
+    background-color: var(--hover-color);
+}
+#context-menu #select-voice{
+    padding: 5px;
+    font-size: 1em;
+    background-color: var(--hover-color);
+    color: var(--txt-color);
+    outline: none;
+}
+.speaker-option{
+    width: max-content;
+    float: left;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px ;
+    transition-duration: 200ms;
+}
+.speaker-option:hover{
+    background-color: var(--hover-color);
+}
+.speaker-option div{
+    width: 7px;
+    border-radius: 50%;
+    height: 7px;
+    background-color: var(--txt-color);
+    margin: 3px;
+}
+/******* toggele switvh css *******/
+.toggle-switch {
+    padding: 7px 0;
+    position: relative;
+    width: 66.6px;
+    float: right;
+}
+
+label {
+    position: absolute;
+    width: 100%;
+    height: 33.33px;
+    background-color: #28292c;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+input:checked ~ .slider {
+    background-color: #d8dbe0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 4.3px;
+    left: 5.3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: inset 9px -4px 0px 0px #d8dbe0;
+    background-color: #28292c;
+    transition: 0.3s;
+}
+
+input:checked ~ .slider::before {
+    transform: translateX(30.6px);
+    background-color: #28292c;
+    box-shadow: none;
+}
+/******* difrent media *********/
+@media (max-width:800px) {
+    .right-container{
+        width: 100%;
+        float: right;
+    }
+    .container{
+        float: left;
+        width: 100%;
+        margin: 20px;
+        padding: 10px 0px;
+        margin: 20px 15px;
+    }
+}
