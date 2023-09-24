@@ -1,4 +1,4 @@
-let Students = [{}];
+let Students;
 /*
     let Students = [
         {
