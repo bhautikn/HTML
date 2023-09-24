@@ -193,7 +193,7 @@ nav{
 .speaker-option{
     width: max-content;
     float: left;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 5px;
     margin: 0 10px ;
     transition-duration: 200ms;
