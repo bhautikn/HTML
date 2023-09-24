@@ -7,9 +7,9 @@ let Students = [{}];
         }
     ]
     // or fetch from other file 
-    fetch('students.json').then(res=>res.json()).then((res=>{Students = res}));
 
 */		
+fetch('students.json').then(res=>res.json()).then((res=>{Students = res}));
 let rollDisplay = document.getElementById('roll-no');
 let nextBtn = document.getElementById('next-btn');
 let previusBtn = document.getElementById('previus-btn');
