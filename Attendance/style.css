@@ -17,9 +17,16 @@ body{
 }
 .container{
     padding: 10px;
+    width: 100%;
+    /* background-color: green; */
+}
+.main-container{
+    /* background-color: red; */
+    width: 30%;
+    float: left
 }
 .left-container{
-    width: max-content;
+    width: 100%;
     float: left;
     padding: 20px;
 }
@@ -271,5 +278,11 @@ input:checked ~ .slider::before {
         margin: 20px;
         padding: 10px 0px;
         margin: 20px 15px;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .btn{
+        font-size: 1em;
     }
 }
